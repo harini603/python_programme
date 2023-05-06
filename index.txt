@@ -1,0 +1,156 @@
+1)Display “Hello World” in your output screen 
+  
+   print("hello world")
+	
+   output : 
+		hello world
+
+2)Get the input from the user and perform addition of two numbers
+
+    a=int(input("enter the value of a"))	
+    b=int(input("enter the value of b"))
+    c=a+b
+    print(c)
+
+    output :
+
+    enter the value of a2
+    enter the value of b3
+    5
+
+3)swap two variables without temp variable
+  	
+	a=int(input("enter the value of a:"))
+      b=int(input("enter the value of b:"))
+      a=a+b
+      a=a-b
+      b=a+b
+      print("the value of a is",a)
+      print("the value of b is",b)
+
+	output:
+	
+	enter the value of a:2
+	enter the value of b:4
+	the value of a is 2
+	the value of b is 6
+   
+4)convert the entered kilometres ( Convertion  Factor= 0.621371)
+
+	kilometer=int(input("enter the kilometer"))
+	conversionfactor=0.621371
+	a=kilometer*conversionfactor
+	print(a)
+	
+	output:
+	
+	enter the kilometer4
+	2.485484
+
+
+
+5)check whether the given number is positive, negative or 0
+
+
+	a=int(input("enter the value of a"))
+	if a>0:
+    		print("positive")
+	elif a==0:
+    		print("negative")
+	else:
+    		print("zero")
+	
+	OUTPUT :
+	enter the value of a6
+	positive
+
+
+6)verify that the given year is a leap year
+
+	year=int(input("enter the year"))
+	if (year%4==0)and(year%100!=0)or(year%400==0):
+   		print("leap year")
+	else:
+    		print("not leap year")
+
+	output : 
+	 enter the year2000
+	 leap year
+
+
+7)display the prime numbers within the given interval
+
+
+	n = int(input("enter the number :"))
+	count = 0
+	for i in range(1,n+1):
+    		if n % i == 0 :
+        		count+=1
+	if count == 2 :
+    		print("its a prime number")
+	else:
+    		print("not a prime number")
+
+	output : 
+		enter the number :6
+		not a prime number 
+
+8) display the Fibonacci sequence up to n-th term
+
+	n = int(input("enter the number:")) #0,1,1,2,3,5,8......
+   	output = [] 
+	if n == 1:
+    		output.append(0)
+    		print(output)
+	elif n == 2:
+    		output.append(0)
+    		output.append(1)
+    		print(output)
+	else:
+    		output.append(0)
+    		output.append(1)
+    		a = 0
+    		b = 1
+    		sum  = 0 
+    		for i in range(n):
+        		sum = a + b
+        		output.append(sum)
+        		a = b
+        		b = sum 
+    		print(output)
+
+	output : 
+	
+	enter the number:10
+	[0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+
+9) check if the number is an Armstrong number or not
+
+	n = input("enter the number :")
+	power = len(n)
+	output = 0
+	for i in n:
+    		a = int(i)**power
+    		output+=a
+	if output == int(n):
+    		print("it a Armstrong number")
+	else:
+    		print("its not a Armstrong number")
+
+	output : 
+	
+	enter the number :153
+	it a Armstrong number
+
+
+10) Find the Sum of natural numbers up to n-th term
+
+	n = int(input("enter the number : "))
+	output = 0
+	for i in range(n+1):
+    		output +=i
+	print(output)
+	
+	output : 
+		enter the number : 10
+		55
